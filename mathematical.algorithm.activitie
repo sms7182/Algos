@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOb/qwuPZiQz6WdBYxqhHB1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sms7182/Algos/blob/master/mathematical.algorithm.activitie\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "id": "vpdCvtqvPJko"
+      },
+      "outputs": [],
+      "source": [
+        "from math import sqrt\n",
+        "import math"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def dot(v1,v2):\n",
+        "  return sum([c1*c2 for c1,c2 in zip(v1,v2)])\n",
+        "\n",
+        "def length(v):\n",
+        "  return sqrt(v[0]**2+v[1]**2)\n"
+      ],
+      "metadata": {
+        "id": "680vC-77PbAH"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "def angle_between(v1,v2):\n",
+        "  return acos(\n",
+        "              dot(v1,v2)/\n",
+        "              (length(v1)*length(v2))\n",
+        "  )"
+      ],
+      "metadata": {
+        "id": "r92ihO1BQZiI"
+      },
+      "execution_count": 7,
+      "outputs": []
+    }
+  ]
+}
